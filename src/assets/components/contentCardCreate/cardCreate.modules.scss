@@ -1,0 +1,94 @@
+
+.text-card-create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-card-create h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.text-card-create p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.input-card-create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.input-card-create input {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    border: none;
+    width: 95%;
+    height: 50px;
+    padding-left: 50px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.input-card-create input#username {
+    background: url("../../image/input/profile.png") no-repeat 20px transparent;
+}
+
+.input-card-create input#password {
+    background: url("../../image/input/password.png") no-repeat 20px transparent;
+}
+
+.input-card-create p {
+    color: #BEBEBE;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.input-card-create p a {
+    color: #BEBEBE;
+}
+
+.actions-card-create {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.actions-card-create h2 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #262626;
+}
+
+.actions-card-create button {
+    width: 56px;
+    height: 34px;
+    background: linear-gradient(135deg, #F97794 0%, #623AA2 100%);
+    border-radius: 17px;
+    border: none;
+    margin: 0 10px;
+}
+
+.account-card-create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.account-card-create p a span {
+    text-decoration: underline;
+}
+.account-card-create p a span {
+    text-decoration: underline;
+    color: #000;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: rgb(242, 242, 242);
+    background: linear-gradient(135deg, rgba(242, 242, 242, 1) 15%, rgba(245, 245, 245, 1) 85%);
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    // box-shadow: 0 0 0 0;
+}
+
+:where(.animate__bounceOut, .animate__bounceInUp, .animate__bounceOutRight, .animate__slideOutLeft, .animate__zoomOut, .animate__backOutRight, .animate__fadeOut) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}

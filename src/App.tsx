@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Routers from './assets/components/Routers';
+import './App.scss';
+import 'animate.css'
 
-function App() {
+
+export interface AppPageProps {} 
+
+const AppPage: React.FunctionComponent<AppPageProps> = props => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <>
+    <Routers>
+    </Routers>
+  </>
+  )
 }
 
-export default App;
+export default AppPage
