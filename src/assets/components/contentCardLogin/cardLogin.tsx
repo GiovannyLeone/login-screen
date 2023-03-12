@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Arrow from '../../image/input/arrow.png'
-import { Link } from 'react-router-dom'
 import "./cardlogin.modules.scss"
 
 
@@ -27,14 +26,13 @@ const CardLogin: React.FunctionComponent<CardLoginProps> = props => {
         e.preventDefault()
 
         if (username !== "" && password !== "" && username.length > 3 && password.length > 3) {
-            const url = "https://api.com.br"
+            const url = "https://localhost/login-screen/model/model.user.php"
             const data = JSON.stringify({
                 username: username,
                 password: password
             })
 
             console.log(data);
-
             /*             
             await fetch(url, {
                             method: 'POST',
