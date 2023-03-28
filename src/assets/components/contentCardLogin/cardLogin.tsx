@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import Arrow from '../../image/input/arrow.svg'
 import "./cardlogin.modules.scss"
 
+import loginBgTop from '../../image/background/loginBgTop.svg'
+import loginBgBottom from '../../image/background/loginBgBottom.svg'
+
+
 
 export interface CardLoginProps { }
 
@@ -79,6 +83,8 @@ const CardLogin: React.FunctionComponent<CardLoginProps> = props => {
     return (
         <>
             <div id='card' className={animation(`bounceInUp ${isAnimation === true && 'animate__bounceOut' || 'animate__bounceInUp'}`)}>
+            <img src={loginBgTop} className='svg-bg-top' />
+            <img src={loginBgBottom} className='svg-bg-bottom' />
 
                 <div className={`animate__animated`}>
                     <div className='text-card-login'>

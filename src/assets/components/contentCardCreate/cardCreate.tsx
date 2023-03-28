@@ -3,6 +3,9 @@ import Arrow from '../../image/input/arrow.svg'
 import { Link } from 'react-router-dom'
 import "./cardCreate.modules.scss"
 
+import createBgTop from '../../image/background/createBgTop.svg'
+import createBgBottom from '../../image/background/createBgBottom.svg'
+
 
 export interface CardCreateProps { }
 
@@ -26,7 +29,9 @@ const CardCreate: React.FunctionComponent<CardCreateProps> = props => {
     return (
         <>
             <div id='card' className={animation(`bounceInUp ${isAnimation === true && 'animate__bounceOut' || 'animate__bounceInUp'}`)}>
-
+            <img src={createBgTop} className='svg-bg-top' />
+            <img src={createBgBottom} className='svg-bg-bottom' />
+            
                 <div className='text-card-create'>
                     <h1>Create account</h1>
                 </div>

@@ -3,6 +3,7 @@ import CardCreate from '../contentCardCreate/cardCreate'
 import CardLogin from '../contentCardLogin/cardLogin'
 import './card.modules.scss'
 
+
 export interface cardProps { }
 
 const Card: React.FunctionComponent<cardProps> = props => {
