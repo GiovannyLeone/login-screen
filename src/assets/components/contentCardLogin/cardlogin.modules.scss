@@ -37,11 +37,11 @@
 }
 
 .input-card-login input#username {
-    background: url("../../image/input/profile.png") no-repeat 20px transparent;
+    background: url("../../image/input/profile.svg") no-repeat 20px transparent;
 }
 
 .input-card-login input#password {
-    background: url("../../image/input/password.png") no-repeat 20px transparent;
+    background: url("../../image/input/password.svg") no-repeat 20px transparent;
 }
 
 .input-card-login p {
@@ -83,9 +83,11 @@
     justify-content: center;
     flex-direction: column;
     justify-content: space-around;
+    color: #00000099;
 }
 
 .account-card-login p span {
     cursor: pointer;
     text-decoration: underline;
+    color: #000;
 }

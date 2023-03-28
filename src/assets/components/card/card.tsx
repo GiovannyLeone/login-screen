@@ -17,25 +17,23 @@ const Card: React.FunctionComponent<cardProps> = props => {
         return `animate__animated animate__${animation}`
     }
 
-        switch (page) {
-            case "":
-                contentCard = <CardLogin />
-                break;
-            default:
-                if (contentCard = <CardCreate />) {
-                    animation("bounceOutDown")
-                }
-                break;
-        }
+    switch (page) {
+        case "":
+            contentCard = <CardLogin />
+            break;
+        default:
+            if (contentCard = <CardCreate />) {
+                animation("bounceOutDown")
+            }
+            break;
+    }
 
     console.log(page);
 
     return (
         <>
             <div id='wrapper'>
-                <div id='card' className={animation("bounceInUp")}>
-                    {contentCard}
-                </div>
+                {contentCard}
             </div>
         </>
     )

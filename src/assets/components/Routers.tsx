@@ -13,6 +13,7 @@ const AppRoutersPage: React.FunctionComponent<AppRoutersPageProps> = props => {
                 <Routes>
                     <Route path='/' element={<Login />} />
                     <Route path='/Create' element={<Login />} />
+                    <Route path='/Profile' element={<Login />} />
                 </Routes>
             </Router>
         </>

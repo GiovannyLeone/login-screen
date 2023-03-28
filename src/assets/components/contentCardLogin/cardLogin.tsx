@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Arrow from '../../image/input/arrow.png'
+import Arrow from '../../image/input/arrow.svg'
 import "./cardlogin.modules.scss"
 
 
@@ -62,36 +62,43 @@ const CardLogin: React.FunctionComponent<CardLoginProps> = props => {
             alert('😢')
         }
     }
+    function animation(animation: string) {
+        return `animate__animated animate__${animation}`
+    }
 
-  const [isAnimation, setAnimation] = useState(false);
-  function ChangeURL(pLink: any) {
-    setAnimation(true)
-    setTimeout(() => {
-        window.location.href = `${pLink}`    
-    }, 850);
 
-  }
+    const [isAnimation, setAnimation] = useState(false);
+    function ChangeURL(pLink: any) {
+        setAnimation(true)
+        setTimeout(() => {
+            window.location.href = `${pLink}`
+        }, 850);
+
+    }
 
     return (
         <>
-        <div className={`'animate__animated' ${isAnimation === true && 'animate__bounceOut' || 'animate__bounceInUp' }`}>
-            <div className='text-card-login'>
-                <h1>Hello</h1>
-                <p>Sign in to your account</p>
+            <div id='card' className={animation(`bounceInUp ${isAnimation === true && 'animate__bounceOut' || 'animate__bounceInUp'}`)}>
+
+                <div className={`animate__animated`}>
+                    <div className='text-card-login'>
+                        <h1>Hello</h1>
+                        <p>Sign in to your account</p>
+                    </div>
+                    <div className='input-card-login'>
+                        <input type="text" name="username" id="username" placeholder='Username' value={username} onChange={onChangeUsername} />
+                        <input type="text" name="password" id="password" placeholder='Password' value={password} onChange={onChangePassword} />
+                        <p><a href="#a">Forgot  your password?</a></p>
+                    </div>
+                    <div className='actions-card-login'>
+                        <h2>Sign in</h2>
+                        <button onClick={setDataLogin}><img src={arrowImage} alt="login" /></button>
+                    </div>
+                    <div className='account-card-login'>
+                        <p>Don’t have an account? <span onClick={() => ChangeURL("/Create")}>Create</span></p>
+                    </div>
+                </div>
             </div>
-            <div className='input-card-login'>
-                <input type="text" name="username" id="username" placeholder='Username' value={username} onChange={onChangeUsername} />
-                <input type="text" name="password" id="password" placeholder='Password' value={password} onChange={onChangePassword} />
-                <p><a href="#a">Forgot  your password?</a></p>
-            </div>
-            <div className='actions-card-login'>
-                <h2>Sign in</h2>
-                <button onClick={setDataLogin}><img src={arrowImage} alt="login" /></button>
-            </div>
-            <div className='account-card-login'>
-                <p>Don’t have an account? <span onClick={ () => ChangeURL("/Create")}>Create</span></p>
-            </div>
-        </div>
         </>
     )
 }

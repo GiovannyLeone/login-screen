@@ -23,7 +23,7 @@ input:focus {
     // box-shadow: 0 0 0 0;
 }
 
-:where(.animate__bounceOut, .animate__bounceInUp, .animate__bounceOutRight, .animate__slideOutLeft, .animate__zoomOut, .animate__backOutRight, .animate__fadeOut) {
+:where(.animate__animated, .animate__bounceOut, .animate__bounceInUp, .animate__bounceOutRight, .animate__slideOutLeft, .animate__zoomOut, .animate__backOutRight, .animate__fadeOut, .animate_bounceInUp) {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

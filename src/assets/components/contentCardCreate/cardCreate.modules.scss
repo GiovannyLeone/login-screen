@@ -37,11 +37,19 @@
 }
 
 .input-card-create input#username {
-    background: url("../../image/input/profile.png") no-repeat 20px transparent;
+    background: url("../../image/input/profile.svg") no-repeat 20px transparent;
 }
 
 .input-card-create input#password {
-    background: url("../../image/input/password.png") no-repeat 20px transparent;
+    background: url("../../image/input/password.svg") no-repeat 20px transparent;
+}
+
+.input-card-create input#email {
+    background: url("../../image/input/email.svg") no-repeat 20px transparent;
+}
+
+.input-card-create input#mobile {
+    background: url("../../image/input/mobile.svg") no-repeat 20px transparent;
 }
 
 .input-card-create p {
@@ -83,11 +91,15 @@
     justify-content: center;
     flex-direction: column;
     justify-content: space-around;
+    color: #00000099;
 }
 
-.account-card-create p a span {
+.account-card-create p span {
+    cursor: pointer;
     text-decoration: underline;
+    color: #000;
 }
+
 .account-card-create p a span {
     text-decoration: underline;
     color: #000;
