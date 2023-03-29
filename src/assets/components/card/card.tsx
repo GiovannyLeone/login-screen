@@ -1,6 +1,8 @@
 import React from 'react'
-import CardCreate from '../contentCardCreate/cardCreate'
 import CardLogin from '../contentCardLogin/cardLogin'
+import CardCreate from '../contentCardCreate/cardCreate'
+import CardProfile from '../contentCardProfile/cardProfile'
+import CardProfileBack from '../contentCardProfile/cardProfileBack'
 import './card.modules.scss'
 
 
@@ -22,10 +24,17 @@ const Card: React.FunctionComponent<cardProps> = props => {
         case "":
             contentCard = <CardLogin />
             break;
+        case "Create":
+            contentCard = <CardCreate />
+            break;
+        case "Profile":
+            contentCard = <CardProfile />
+            break;
+        case "ProfileBack":
+            contentCard = <CardProfileBack />
+            break;
         default:
-            if (contentCard = <CardCreate />) {
-                animation("bounceOutDown")
-            }
+            contentCard = <CardLogin />
             break;
     }
 

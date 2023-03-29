@@ -1,0 +1,93 @@
+.text-card-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-card-profile img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.text-card-profile h1 {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.carrossel-card-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30%;
+}
+
+.square-network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(0deg, rgba(193, 180, 204, 0.2), rgba(193, 180, 204, 0.2)), linear-gradient(157.45deg, #7743CD 41.34%, #440377 97.25%) !important;
+    color: #FFF;
+    width: 90%;
+    height: 150px;
+    border-radius: 26px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    cursor: pointer;
+}
+
+.carrossel-card-profile .square-network {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.account-card-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #00000099;
+}
+
+.account-card-profile p span {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #000;
+}
+
+#btnNavegation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(0deg, rgba(193, 180, 204, 0.2), rgba(193, 180, 204, 0.2)), linear-gradient(157.45deg, #7743CD 41.34%, #440377 97.25%) !important;
+    color: #FFF;
+    width: 200px;
+    height: 150px;
+    border-radius: 26px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    cursor: pointer;
+}
+
+#btnNavegation button {
+    padding: 10px 35px;
+    margin: 0px 20px 0 20px;
+    border: 2px solid #3747A6;
+    background-color: #435AD9;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'LemonMilkMedium';
+    z-index: 999;
+    cursor: pointer;
+    width: 230px;
+    border-radius: 12px;
+}
