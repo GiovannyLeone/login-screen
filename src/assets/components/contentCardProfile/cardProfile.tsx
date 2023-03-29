@@ -39,7 +39,7 @@ const CardProfile: React.FunctionComponent<CardProfileProps> = props => {
                     </div>
                     <div className='carrossel-card-profile'>
                         <div className='square-network' onClick={() => ChangeURL("/ProfileBack")}>
-                           <h2>Turn Around</h2>
+                           <h2>Check your information</h2>
                         </div>
                     </div>
                     <div className='account-card-login'>
