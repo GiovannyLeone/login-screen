@@ -4,6 +4,7 @@ import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { LeftArrow, RightArrow } from "./Arrows";
 import { Button } from "./Button";
 import "./scss/style-scroll.scss"
+import 'react-horizontal-scrolling-menu/dist/styles.css';
 
 import usePreventBodyScroll from "./ts/usePreventBodyScroll";
 
@@ -13,7 +14,7 @@ const elemPrefix = "Button";
 const getId = (index: number) => `${elemPrefix}${index}`;
 
 const getItems = () =>
-  Array(2)
+  Array(10)
     .fill(0)
     .map((_, ind) => ({ id: getId(ind) }));
 
@@ -56,4 +57,3 @@ function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));

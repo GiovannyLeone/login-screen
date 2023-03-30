@@ -12,12 +12,14 @@
     position: absolute;
     left: 0;
     top: 0;
+    border-radius: 35px 0 0 0;
 }
 
 .svg-bg-bottom {
     position: absolute;
     left: 0;
     bottom: 0;
+    border-radius: 0 0 0 35px ;
 }
 
 #card {

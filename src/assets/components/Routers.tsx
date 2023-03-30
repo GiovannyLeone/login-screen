@@ -15,6 +15,7 @@ const AppRoutersPage: React.FunctionComponent<AppRoutersPageProps> = props => {
                     <Route path='/Create' element={<Login />} />
                     <Route path='/Profile' element={<Login />} />
                     <Route path='/ProfileBack' element={<Login />} />
+                    <Route path='/Teste' element={<Login />} />
                 </Routes>
             </Router>
         </>

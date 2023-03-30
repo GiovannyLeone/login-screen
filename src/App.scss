@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
     font-family: 'Lato', sans-serif;
 }
 
 body {
+    overflow: hidden;
     background: rgb(242, 242, 242);
     background: linear-gradient(135deg, rgba(242, 242, 242, 1) 15%, rgba(245, 245, 245, 1) 85%);
 }

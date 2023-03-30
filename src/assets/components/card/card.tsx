@@ -4,6 +4,7 @@ import CardCreate from '../contentCardCreate/cardCreate'
 import CardProfile from '../contentCardProfile/cardProfile'
 import CardProfileBack from '../contentCardProfile/cardProfileBack'
 import './card.modules.scss'
+import Teste from '../Teste'
 
 
 export interface cardProps { }
@@ -32,6 +33,9 @@ const Card: React.FunctionComponent<cardProps> = props => {
             break;
         case "ProfileBack":
             contentCard = <CardProfileBack />
+            break;
+        case "Teste":
+            contentCard = <Teste />
             break;
         default:
             contentCard = <CardLogin />

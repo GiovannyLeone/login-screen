@@ -9,6 +9,7 @@ import me from '../../image/profile/me-2.png'
 import instagram from '../../image/profile/Instagram_icon.png'
 
 import Navegation from './Navegation/Navegation'
+import ScrollView from './Navegation/ScrollView'
 
 
 export interface CardProfileBackProps { }
@@ -41,6 +42,7 @@ const CardProfileBack: React.FunctionComponent<CardProfileBackProps> = props => 
                         <h1>Giovanny Leone</h1>
                     </div>
                     <div className='carrossel-card-profile'>
+                            <ScrollView />
                             <Navegation />
                     </div>
                     <div className='account-card-login'>

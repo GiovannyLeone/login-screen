@@ -1,0 +1,30 @@
+.scroll{
+    position: fixed;
+    bottom: calc(50% - 50px);
+    left: calc(50% - 75px);
+    width: 150px;
+    height: 100px;
+    z-index: 1;
+    text-align: center;
+    @keyframes sc {
+        0% { transform: translateX(-120px); opacity: 0; }
+        50% { opacity: 1; }
+        100% { transform: translateX(120px); opacity: 0; }
+    }
+    .bar{
+        width: 100%;
+        height: 1px;border-radius: 100px;
+        background: linear-gradient(0deg, rgba(193, 180, 204, 0.2), rgba(193, 180, 204, 0.2)), linear-gradient(157.45deg, #7743CD 41.34%, #440377 97.25%);
+        animation: sc 5s ease-in-out infinite;
+    }
+    .label{
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    .rotate{
+        transform: rotate(-90deg);
+        overflow: hidden;
+        width: 80px;
+    }
+}
