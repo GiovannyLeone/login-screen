@@ -13,7 +13,7 @@ const elemPrefix = "Button";
 const getId = (index: number) => `${elemPrefix}${index}`;
 
 const getItems = () =>
-  Array(4)
+  Array(2)
     .fill(0)
     .map((_, ind) => ({ id: getId(ind) }));
 
