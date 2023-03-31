@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 20px;
+    margin: 50px;
 }
 
 .text-card-profile img {
@@ -15,6 +15,36 @@
     padding-top: 10px;
     font-weight: bold;
     font-size: 30px;
+}
+
+.text-card-profile h2 {
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #440377;
+    font-style: italic;
+}
+
+.about-me-card-profile {
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+}
+
+.about-me-card-profile h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.about-me-card-profile p {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #440377;
 }
 
 .carrossel-card-profile {
@@ -47,12 +77,14 @@
     // background: linear-gradient(0deg, rgba(193, 180, 204, 0.2), rgba(193, 180, 204, 0.2)), linear-gradient(157.45deg, #7743CD 41.34%, #440377 97.25%) !important;
     color: #FFF;
     width: 90%;
-    height: 150px;
+    margin: 0 auto;
+    height: 80px;
     border-radius: 26px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     cursor: pointer;
     text-align: center;
+    z-index: 2;
 }
 
 .carrossel-card-profile .square-network {
@@ -60,11 +92,10 @@
     font-weight: 600;
 }
 
-.square-network h2 {
+.square-network h3 {
     font-size: 25px;
     color: #440377;
 }
-
 
 .account-card-profile {
     display: flex;

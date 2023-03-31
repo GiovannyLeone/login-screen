@@ -39,7 +39,8 @@ const CardProfileBack: React.FunctionComponent<CardProfileBackProps> = props => 
                 <div className={`animate__animated`}>
                     <div className='text-card-profile'>
                         <img src={me} alt="Profile Picture" onClick={() => ChangeURL("/Profile")} />
-                        <h1>Giovanny Leone</h1>
+                        <h1>Giovanny Leone, 19</h1>
+                        <h2>Backend Developer</h2>
                     </div>
                     <div className='carrossel-card-profile'>
                             <ScrollView />

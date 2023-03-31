@@ -35,11 +35,17 @@ const CardProfile: React.FunctionComponent<CardProfileProps> = props => {
                 <div className={`animate__animated`}>
                     <div className='text-card-profile'>
                         <img src={me} alt="Profile Picture" />
-                        <h1>Giovanny Leone</h1>
+                        <h1>Giovanny Leone, 19</h1>
+                        <h2>Backend Developer</h2>
+                    </div>
+                    <div className='about-me-card-profile'>
+                        <h2>About-me</h2>
+                        <p>Olá sou o desenvolvedor dessa aplicação
+                        </p>
                     </div>
                     <div className='carrossel-card-profile'>
                         <div className='square-network' onClick={() => ChangeURL("/ProfileBack")}>
-                           <h2>Check your information</h2>
+                            <h3>Check your information</h3>
                         </div>
                     </div>
                     <div className='account-card-login'>
