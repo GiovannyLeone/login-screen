@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 20px;
 }
 
 .text-card-profile img {
@@ -22,7 +23,19 @@
     justify-content: center;
     flex-direction: row;
     justify-content: space-around;
-    height: 30%;
+    height: 35vh;
+}
+
+
+.dataNetwork {
+    position: absolute;
+    background: #440377;
+    width: 100px;
+    left: 100px;
+    top: 0;
+    z-index: 3;
+    color: #FFF;
+    transition: .3;
 }
 
 .square-network {
@@ -68,16 +81,16 @@
     color: #000;
 }
 
-#btnNavegation{
+#btnNavegation {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
     background: linear-gradient(0deg, rgba(193, 180, 204, 0.2), rgba(193, 180, 204, 0.2)), linear-gradient(157.45deg, #7743CD 41.34%, #440377 97.25%) !important;
     color: #FFF;
-    width: 370px;
+    width: 250px; //370px
     height: 90px;
     border-radius: 26px;
-    margin: 0px 10px;
+    margin: 0px 67px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     cursor: pointer;
     transition: .3s;
@@ -89,8 +102,8 @@
 }
 
 #btnNavegation:hover {
-    margin-bottom: 100px;
-    height: 110px;
+    // margin-bottom: 100px;
+    // height: 110px;
     background: #FFF;
     // color: linear-gradient(0deg, rgba(193, 180, 204, 0.2), rgba(193, 180, 204, 0.2)), linear-gradient(157.45deg, #7743CD 41.34%, #440377 97.25%) !important;
 }

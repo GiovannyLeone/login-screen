@@ -70,7 +70,6 @@ export function Button({ title, itemId }: { title: string; itemId: string }) {
 
   return (
     <>
-      <p>{text}</p>
       <div
         role="button"
         tabIndex={0}

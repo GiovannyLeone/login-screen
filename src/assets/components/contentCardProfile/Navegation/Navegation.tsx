@@ -14,7 +14,7 @@ const elemPrefix = "Button";
 const getId = (index: number) => `${elemPrefix}${index}`;
 
 const getItems = () =>
-  Array(10)
+  Array(5)
     .fill(0)
     .map((_, ind) => ({ id: getId(ind) }));
 
