@@ -33,6 +33,7 @@ const CreateNetworks: React.FunctionComponent<CreateNetworksProps> = props => {
         })
 
         const storageJob = localStorage.getItem("dataJob");
+        const storageBio = localStorage.getItem("dataBio");
         const storageInstagram = localStorage.getItem("dataInstragam");
         const storageLinkedin = localStorage.getItem("dataLinkedin");
         const storageTikTok = localStorage.getItem("dataTikTok");
@@ -50,6 +51,19 @@ const CreateNetworks: React.FunctionComponent<CreateNetworksProps> = props => {
         })
 
         localStorage.setItem("dataJob", job);
+
+        const { value: bio } = await Swal.fire({
+            input: 'textarea',
+            inputLabel: 'Escreva sobre você...',
+            inputPlaceholder: 'Digite aqui...',
+            inputAttributes: {
+              'aria-label': 'Type your message here'
+            },
+            showCancelButton: true
+          })
+
+        localStorage.setItem("dataBio", bio);
+
 
         const { value: instragam } = await Swal.fire({
             title: 'Qual é seu @ do instagram',
